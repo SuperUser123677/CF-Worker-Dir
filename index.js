@@ -39,6 +39,32 @@ const config = {
   },
   lists: [                            //Url list
     {
+      name:"CyberSecurity",
+      icon:"shield",
+      list:[
+        {
+          url:"https://www.51sec.org/",
+          name:"Info Security Memo",
+          desc:"Information Security Memo"
+        },
+        {
+          url:"https://Blog.51sec.org",
+          name:"Cyber Security Blog",
+          desc:"Cyber Security Memo"
+        },
+        {
+          url:"https://itprosec.com/",
+          name:"ITProSec",
+          desc:"IT Professional Security"
+        },
+        {
+          url:"https://github.com/",
+          name:"Github",
+          desc:"程序员集散地"
+        },
+      ]
+    },
+    {
       name:"Technologies",
       icon:"code",
       list:[
