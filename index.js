@@ -1,45 +1,45 @@
 /**
- *  自定义网站配置 
+ *  Customized Sites Definition 
  */
 const config = {
-  title: "自定义导航",                 //write your website title
+  title: "My Bookmarks",                 //write your website title
   subtitle: "Cloudflare Workers Dir", //write your website subtitle
   logo_icon: "sitemap",               //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
   hitokoto: true,                     //use hitokoto or not
   search:true,                        //enable search function
   search_engine:[                     //choose search engine which you use
+
     {
-      name:"百 度",
-      template:"https://www.baidu.com/s?wd=$s"
-    },
-    {
-      name:"谷 歌",
+      name:"Google",
       template:"https://www.google.com/search?q=$s"
     },
     {
-      name:"必 应",
+      name:"Baidu",
+      template:"https://www.baidu.com/s?wd=$s"
+    },    {
+      name:"Bing",
       template:"https://www.bing.com/search?q=$s"
     },
     {
-      name:"搜 狗",
+      name:"Sogou",
       template:"https://www.sogou.com/web?query=$s"
     }
   ],
   selling_ads: true,                  //Selling your domain or not.(turning on may be helpful for selling this domain by showing some ads.)
   sell_info:{
-    domain:"example.com",
+    domain:"51sec.org",
     price:500,                        //domain price
-    mon_unit:"yen sign",              //monetary unit 
+    mon_unit:"usd sign",              //monetary unit 
     contact:[                         //how to contact you
       {
         type:"envelope",               //contact type ("weixin","qq","telegram plane","envelope" or "phone")
-        content:"info@example.com"
+        content:"jyadmin@51sec.org"
       }
     ]                        
   },
   lists: [                            //Url list
     {
-      name:"技术",
+      name:"Technologies",
       icon:"code",
       list:[
         {
@@ -65,7 +65,7 @@ const config = {
       ]
     },
     {
-      name:"学习",
+      name:"Learning",
       icon:"graduation cap",
       list:[
         {
