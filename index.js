@@ -58,12 +58,41 @@ const config = {
           desc:"IT Professional Security"
         },
         {
-          url:"https://github.com/",
-          name:"Github",
-          desc:"程序员集散地"
+          url:"https://portainer.51sec.org",
+          name:"Portainer",
+          desc:"Portainer"
         },
       ]
     },
+
+{
+      name:"InfoSecurity",
+      icon:"id-badge",
+      list:[
+        {
+          url:"https://51sec.loggly.com/",
+          name:"Loggly",
+          desc:"Loggly"
+        },
+        {
+          url:"https://proxy.51sec.org/",
+          name:"Proxy",
+          desc:"Proxy"
+        },
+        {
+          url:"https://gd.51sec.workers.dev/",
+          name:"Google Drive",
+          desc:"Google Drive"
+        },
+        {
+          url:"https://download.51sec.workers.dev",
+          name:"Download",
+          desc:"Download"
+        },
+      ]
+    },
+
+
     {
       name:"Technologies",
       icon:"code",
@@ -138,10 +167,10 @@ addEventListener('fetch', event => {
 function getFavicon(url){
   if(url.match(/https{0,1}:\/\//)){
     //return "https://ui-avatars.com/api/?bold=true&size=36&background=0D8ABC&color=fff&rounded=true&name=" + url.split('//')[1];
-    return "https://icon.occ.hk/get.php?url=" + url;
+    return "http://icon.occ.hk/get.php?url=" + url;
   }else{
     //return "https://ui-avatars.com/api/?bold=true&size=36&background=0D8ABC&color=fff&rounded=true&name=" + url;
-    return "https://icon.occ.hk/get.php?url=http://" + url;
+    return "http://icon.occ.hk/get.php?url=http://" + url;
   } 
 }
 
