@@ -1,14 +1,15 @@
 /**
  *  Customized Sites Definition 
+ *  Github address : https://github.com/sleepwood/CF-Worker-Dir/
+ *  https://github.com/51sec/CF-Worker-Dir/blob/master/index.js
  */
 const config = {
   title: "My Bookmarks",                 //write your website title
   subtitle: "Cloudflare Workers Dir", //write your website subtitle
   logo_icon: "sitemap",               //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
-  hitokoto: true,                     //use hitokoto or not
-  search:true,                        //enable search function
+  hitokoto: false,                     //use hitokoto or not
+  search:false,                        //enable search function
   search_engine:[                     //choose search engine which you use
-
     {
       name:"Google",
       template:"https://www.google.com/search?q=$s"
@@ -25,15 +26,15 @@ const config = {
       template:"https://www.sogou.com/web?query=$s"
     }
   ],
-  selling_ads: true,                  //Selling your domain or not.(turning on may be helpful for selling this domain by showing some ads.)
+  selling_ads: false,                  //Selling your domain or not.(turning on may be helpful for selling this domain by showing some ads.)
   sell_info:{
     domain:"51sec.org",
-    price:500,                        //domain price
+    price:5000,                        //domain price
     mon_unit:"usd sign",              //monetary unit 
     contact:[                         //how to contact you
       {
         type:"envelope",               //contact type ("weixin","qq","telegram plane","envelope" or "phone")
-        content:"jyadmin@51sec.org"
+        content:"admin@51sec.org"
       }
     ]                        
   },
@@ -58,7 +59,7 @@ const config = {
           desc:"IT Professional Security"
         },
         {
-          url:"https://portainer.51sec.org",
+          url:"https://opc2portainer.51sec.org",
           name:"Portainer",
           desc:"Portainer"
         },
@@ -85,13 +86,39 @@ const config = {
           desc:"Google Drive"
         },
         {
-          url:"https://download.51sec.workers.dev",
-          name:"Download",
-          desc:"Download"
+          url:"https://od.51sec.org",
+          name:"One Drive",
+          desc:"One Drive"
         },
       ]
     },
 
+{
+      name:"51Sec App",
+      icon:"id-badge",
+      list:[
+        {
+          url:"https://51sec.org/mail",
+          name:"51Sec Webmail",
+          desc:"51Sec Webmail"
+        },
+        {
+          url:"https://sec.myxwiki.org/",
+          name:"51Sec Wiki",
+          desc:"51Sec Wiki"
+        },
+        {
+          url:"https://calendly.com/51sec/",
+          name:"51Sec Calendar",
+          desc:"Google Drive"
+        },
+        {
+          url:"https://myod.51sec.eu.org",
+          name:"51Sec EU OneDrive",
+          desc:"51Sec EU OneDrive"
+        },
+      ]
+    },
 
     {
       name:"Technologies",
@@ -167,10 +194,12 @@ addEventListener('fetch', event => {
 function getFavicon(url){
   if(url.match(/https{0,1}:\/\//)){
     //return "https://ui-avatars.com/api/?bold=true&size=36&background=0D8ABC&color=fff&rounded=true&name=" + url.split('//')[1];
-    return "http://icon.occ.hk/get.php?url=" + url;
+    //return "http://icon.occ.hk/get.php?url=" + url;
+    return "https://www.google.cn/s2/favicons?sz=64&domain_url=" + url;
   }else{
     //return "https://ui-avatars.com/api/?bold=true&size=36&background=0D8ABC&color=fff&rounded=true&name=" + url;
-    return "http://icon.occ.hk/get.php?url=http://" + url;
+    //return "http://icon.occ.hk/get.php?url=http://" + url;
+    return "https://www.google.cn/s2/favicons?sz=64&domain_url=http://" + url;
   } 
 }
 
