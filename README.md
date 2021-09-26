@@ -8,7 +8,7 @@ CF-Worker-Dir is a cloud function program suitable for Cloudflare Worker platfor
 <summary>📷Screenshot</summary>
 <img src="https://i.loli.net/2020/02/14/ahU32dQxMct9ugX.png"/>
 </details>
-<img src="https://photos.51sec.org/file/test1-51sec/2021/09/chrome_Wjajs2ZzFA.png"/>
+<img src="https://photos.51sec.org/file/test1-51sec/2021/09/chrome_Wjajs2ZzFA.png"/ width="600">
 
 ## Installation
 ### Quick installation Steps
