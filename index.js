@@ -1,6 +1,6 @@
 /**
  *  Customized Sites Definition 
- *  Github address : https://github.com/sleepwood/CF-Worker-Dir/
+ *  Original Github address : https://github.com/sleepwood/CF-Worker-Dir/
  *  https://github.com/51sec/CF-Worker-Dir/blob/master/index.js
  */
 const config = {
