@@ -270,6 +270,38 @@ function renderHTML(index,seller) {
       <link href="https://cdn.jsdelivr.net/gh/sleepwood/cf-worker-dir@0.1.1/style.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/semantic-ui-css@2.4.1/semantic.min.js"></script>
+      
+<!-- Remove/replace following codes which are for ads and statistics until before "</head>" -->  
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DH75HWQR1T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DH75HWQR1T');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5660349373091698"
+     crossorigin="anonymous">
+</script>  
+
+<script>
+(function() {
+    var el = document.createElement('script');
+    el.type = 'text/javascript';
+    el.charset = 'utf-8';
+    el.async = true;
+    var ref = document.getElementsByTagName('script')[0];
+    ref.parentNode.insertBefore(el, ref);
+    el.src = 'https://w.cnzz.com/c.php?id=1280438991&async=1';
+})();
+</script>  
+
+<!-- Remove/replace above codes -->  
+      
+      
   </head>
   <body>
     ${index}
