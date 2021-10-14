@@ -1,14 +1,14 @@
 /**
  *  Customized Sites Definition 
- *  Original Github address : https://github.com/sleepwood/CF-Worker-Dir/
+ *  Github address : https://github.com/sleepwood/CF-Worker-Dir/
  *  https://github.com/51sec/CF-Worker-Dir/blob/master/index.js
  */
 const config = {
-  title: "My Bookmarks",                 //write your website title
-  subtitle: "Cloudflare Workers Dir", //write your website subtitle
+  title: "51Sec    Sites    Dashboard",                 //write your website title
+  subtitle: "A  Web  Sites  Dashboard  Based  on  Cloudflare  Workers", //write your website subtitle
   logo_icon: "sitemap",               //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
   hitokoto: false,                     //use hitokoto or not
-  search:false,                        //enable search function
+  search:true,                        //enable search function
   search_engine:[                     //choose search engine which you use
     {
       name:"Google",
@@ -76,12 +76,12 @@ const config = {
           desc:"Loggly"
         },
         {
-          url:"https://proxy.51sec.org/",
+          url:"https://proxy.itprosec.eu.org/",
           name:"Proxy",
           desc:"Proxy"
         },
         {
-          url:"https://gd.51sec.workers.dev/",
+          url:"https://gd.51sec.org",
           name:"Google Drive",
           desc:"Google Drive"
         },
@@ -110,12 +110,27 @@ const config = {
         {
           url:"https://calendly.com/51sec/",
           name:"51Sec Calendar",
-          desc:"Google Drive"
+          desc:"Book a 15 mins meeting with Netsec"
         },
         {
           url:"https://myod.51sec.eu.org",
           name:"51Sec EU OneDrive",
           desc:"51Sec EU OneDrive"
+        },
+        {
+          url:"https://ip.51sec.org/api",
+          name:"Your Public IP",
+          desc:"Show Your Public IP Address"
+        },
+        {
+          url:"https://nav.51sec.org",
+          name:"51Sec Navigation",
+          desc:"Bookmarks for all kinds of things, Software, Website, tools, Tutorials"
+        },
+                {
+          url:"https://go.51sec.org",
+          name:"URL Shortener",
+          desc:"Shorten your long URL"
         },
       ]
     },
@@ -208,7 +223,7 @@ function getFavicon(url){
  */
 
 function renderIndex(){
-  const footer = el('footer',[],el('div',['class="footer"'],'Powered by' + el('a',['class="ui label"','href="https://github.com/51sec/cf-worker-dir"','target="_blank"'],el('i',['class="github icon"'],"") + 'Cf-Worker-Dir') + ' &copy; Base on ' + el('a',['class="ui label"'],el('i',['class="balance scale icon"'],"") + 'MIT License    51sec.org')));
+  const footer = el('footer',[],el('div',['class="footer"'],'Powered by' + el('a',['class="ui label"','href="https://github.com/51sec/cf-worker-dir"','target="_blank"'],el('i',['class="github icon"'],"") + 'Cf-Worker-Dir') + ' &copy; Base on ' + el('a',['class="ui label"'],el('i',['class="balance scale icon"'],"") + 'MIT License')));
   return renderHeader() + renderMain() + footer;
 }
 
@@ -224,7 +239,7 @@ function renderHeader(){
       return item(link.template,link.name);
     }
   }).join(""))
-  var input = el('div',['class="ui left corner labeled right icon fluid large input"'],el('div',['class="ui left corner label"'],el('img',['id="search-fav"','class="left floated avatar ui image"','src="https://www.google.com/favicon.ico"'],"")) + el('input',['id="searchinput"','type="search"','placeholder="Search what you want to know……"','autocomplete="off"'],"") + el('i',['class="inverted circular search link icon"'],""));
+  var input = el('div',['class="ui left corner labeled right icon fluid large input"'],el('div',['class="ui left corner label"'],el('img',['id="search-fav"','class="left floated avatar ui image"','src="https://www.google.com/favicon.ico"'],"")) + el('input',['id="searchinput"','type="search"','placeholder="Type anything you want to search……"','autocomplete="off"'],"") + el('i',['class="inverted circular search link icon"'],""));
   return el('header',[],el('div',['id="head"','class="ui inverted vertical masthead center aligned segment"'],(config.hitokoto ? el('div',['id="nav"','class="ui container"'],nav) : "") + el('div',['id="title"','class="ui text container"'],title + (config.search ? input + menu :"") + `${config.selling_ads ? '<div><a id="menubtn" class="red ui icon inverted button"><i class="heart icon"></i> 喜欢此域名 </a></div>' : ''}`)))
 }
 
@@ -270,38 +285,6 @@ function renderHTML(index,seller) {
       <link href="https://cdn.jsdelivr.net/gh/sleepwood/cf-worker-dir@0.1.1/style.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/semantic-ui-css@2.4.1/semantic.min.js"></script>
-      
-<!-- Remove/replace following codes which are for ads and statistics until before "</head>" -->  
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DH75HWQR1T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DH75HWQR1T');
-</script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5660349373091698"
-     crossorigin="anonymous">
-</script>  
-
-<script>
-(function() {
-    var el = document.createElement('script');
-    el.type = 'text/javascript';
-    el.charset = 'utf-8';
-    el.async = true;
-    var ref = document.getElementsByTagName('script')[0];
-    ref.parentNode.insertBefore(el, ref);
-    el.src = 'https://w.cnzz.com/c.php?id=1280438991&async=1';
-})();
-</script>  
-
-<!-- Remove/replace above codes -->  
-      
-      
   </head>
   <body>
     ${index}
