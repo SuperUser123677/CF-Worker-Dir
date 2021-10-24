@@ -6,6 +6,15 @@ CF-Worker-Dir is a cloud function program suitable for Cloudflare Worker platfor
 
 🎉[Demo2](http://sites.itprosec.com/)
 
+## Features
+- Categories / Sections
+- Auto-fetch favicon
+- Selling ads
+- Hitokoto - one sentence note
+- No server / service required
+- Fast and free using Cloudflare workers
+- Configuration / Data in one text file
+
 <details>
 <summary>📷Screenshot</summary>
 <img src="https://i.loli.net/2020/02/14/ahU32dQxMct9ugX.png"/>
