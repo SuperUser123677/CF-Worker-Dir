@@ -210,11 +210,11 @@ function getFavicon(url){
   if(url.match(/https{0,1}:\/\//)){
     //return "https://ui-avatars.com/api/?bold=true&size=36&background=0D8ABC&color=fff&rounded=true&name=" + url.split('//')[1];
     //return "http://icon.occ.hk/get.php?url=" + url;
-    return "https://www.google.cn/s2/favicons?sz=64&domain_url=" + url;
+    return "https://www.google.com/s2/favicons?sz=64&domain_url=" + url;
   }else{
     //return "https://ui-avatars.com/api/?bold=true&size=36&background=0D8ABC&color=fff&rounded=true&name=" + url;
     //return "http://icon.occ.hk/get.php?url=http://" + url;
-    return "https://www.google.cn/s2/favicons?sz=64&domain_url=http://" + url;
+    return "https://www.google.com/s2/favicons?sz=64&domain_url=http://" + url;
   } 
 }
 
