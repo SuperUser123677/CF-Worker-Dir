@@ -4,9 +4,9 @@
  *  https://github.com/51sec/CF-Worker-Dir/blob/master/index.js
  */
 const config = {
-  title: "51Sec    Sites    Dashboard",                 //write your website title
-  subtitle: "A  Web  Sites  Dashboard  Based  on  Cloudflare  Workers", //write your website subtitle
-  logo_icon: "sitemap",               //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
+  title: "HomeFlix-Media's   Dashboard",                 //write your website title
+  subtitle: "A List of Useful Links", //write your website subtitle
+  logo_icon: "server",               //select your logo by semantic-ui icon (you can get more msg in:https://semantic-ui.com/elements/icon.html)
   hitokoto: false,                     //use hitokoto or not
   search:true,                        //enable search function
   search_engine:[                     //choose search engine which you use
@@ -15,15 +15,15 @@ const config = {
       template:"https://www.google.com/search?q=$s"
     },
     {
-      name:"Baidu",
-      template:"https://www.baidu.com/s?wd=$s"
+      name:"DuckDuckGo",
+      template:"https://duckduckgo.com/search?q=$s"
     },    {
       name:"Bing",
       template:"https://www.bing.com/search?q=$s"
     },
     {
-      name:"Sogou",
-      template:"https://www.sogou.com/web?query=$s"
+      name:"Startpage",
+      template:"https://www.startpage.com/search?q=$s"
     }
   ],
   selling_ads: false,                  //Selling your domain or not.(turning on may be helpful for selling this domain by showing some ads.)
@@ -40,150 +40,274 @@ const config = {
   },
   lists: [                            //Url list
     {
-      name:"CyberSecurity",
-      icon:"shield",
+      name:"Applications",
+      icon:"globe",
       list:[
         {
-          url:"https://www.51sec.org/",
-          name:"Info Security Memo",
-          desc:"Information Security Memo"
+      name:"Applications",
+      icon:"globe",
+      list:[
+        {
+          url:"https://nullreferer.com/?https://apps.securedserveraccess.com",
+          name:"Plex Landing Page",
+          desc:"Landing Page"
         },
         {
-          url:"https://Blog.51sec.org",
-          name:"Cyber Security Blog",
-          desc:"Cyber Security Memo"
+          url:"https://nullreferer.com/?https://securedserveraccess.com",
+          name:"HomePage",
+          desc:"HomeFlix-Media Website"
         },
         {
-          url:"https://itprosec.com/",
-          name:"ITProSec",
-          desc:"IT Professional Security"
+          url:"https://nullreferer.com/?https://hfmr.securedserveraccess.com/landingpage",
+          name:"Ombi",
+          desc:"Media Request Site"
         },
         {
-          url:"https://opc2portainer.51sec.org",
-          name:"Portainer",
-          desc:"Portainer"
+          url:"https://nullreferer.com/?https://hfmr-alt.securedserveraccess.com/#/user",
+          name:"Petio",
+          desc:"Media Request Site"
+        },
+        {
+          url:"https://nullreferer.com/?https://hfm_portal.securedserveraccess.com",
+          name:"Tautulli Login",
+          desc:"History, Newsletters, etc."
+        },
+        {
+          url:"https://nullreferer.com/?https://publier.app/",
+          name:"Publier",
+          desc:"Publish PLEX events to the services of your choice!"
+        },
+        {
+          url:"https://nullreferer.com/?https://stats.uptimerobot.com/NWVvOuNG8X",
+          name:"Status Page",
+          desc:"Website Monitoring"
+        },
+        {
+          url:"https://nullreferer.com/?https://radio.securedserveraccess.com/login.view?",
+          name:"Subsonic",
+          desc:"HomeFlix-Media Internet Radio"
+        },
+        {
+          url:"https://nullreferer.com/?https://www.securedserveraccess.com/forum/memberlist.php?mode=searchuser&form=select_user&field=username&select_single=true&sid=172c868fc15796e7d1539a34b1c5133e",
+          name:"Forum Tools",
+          desc:"HomeFlix-Media Forum Management"
+        },
+        {
+          url:"https://nullreferer.com/?https://inet1.securedserveraccess.com/login",
+          name:"Grafana Dashboard",
+          desc:"HomeFlix-Media Monitoring"
+        },
+        {
+          url:"https://nullreferer.com/?https://inet2.securedserveraccess.com/admin/index.php",
+          name:"Pi-Hole DNS Management",
+          desc:"HomeFlix-Media Monitoring"
+        },
+        {
+          url:"https://nullreferer.com/?https://inet-manage.securedserveraccess.com/#!/auth",
+          name:"Docker Management",
+          desc:"HomeFlix-Media Monitoring"
+        },
+        {
+          url:"https://nullreferer.com/?https://hfm_server.securedserveraccess.com/web/index.html#!/",
+          name:"Proxied Plex Server",
+          desc:"HomeFlix-Media Private Server"
+        },
+        {
+          url:"https://nullreferer.com/?https://netbalancer.com/",
+          name:"NetBalancer",
+          desc:"NetBalancer is a Windows application for local network traffic control and monitoring"
+        },
+        {
+          url:"https://nullreferer.com/?https://inet-files.securedserveraccess.com/",
+          name:"GodDrive",
+          desc:"HomeFlix-Media Private Drive"
+        },
+        {
+          url:"https://nullreferer.com/?https://www.securedserveraccess.com/forum/",
+          name:"Forum Page",
+          desc:"HomeFlix-Media Main Forum"
+        },
+        {
+          url:"https://nullreferer.com/?https://pwndrop.securedserveraccess.com/",
+          name:"Pwndrop",
+          desc:"HomeFlix-Media Mystery URL"
+        },
+        {
+          url:"https://nullreferer.com/?https://kavita.securedserveraccess.com/",
+          name:"Ebook/Comic Collection",
+          desc:"Kavita is a full-fledged, fast, cross-platform, & open-source manga, comic, and book server. Built from the ground up with a focus on manga and a goal of being a full solution to your reading needs. Set up your own server and share your manga, comics, and e-book collection with your friends and family."
+        },
+        {
+          url:"https://nullreferer.com/?https://app.smtp2go.com/login",
+          name:"SMTP2GO",
+          desc:"SMTP2GO, a leader in transactional email delivery. You've probably found this page because you received an email from someone using our service. SMTP2GO helps ensure that important transactional emails are delivered to an inbox, instead of the spam folder. Check out SMTP2GO to improve your email deliverability with just a few clicks."
+        },
+        {
+          url:"https://nullreferer.com/?https://hfm-proxy.securedserveraccess.com/",
+          name:"Proxy Server",
+          desc:"HomeFlix-Media web Proxy (LOGIN IS REQUIRED!)"
+        },
+        {
+          url:"https://nullreferer.com/?https://account.proton.me/login",
+          name:"Proton Mail",
+          desc:"Proton Mail is an end-to-end encrypted email service founded in 2013 in Geneva, Switzerland. Proton Mail uses client-side encryption to protect email content and user data before they are sent to Proton Mail servers, unlike other common email providers such as Gmail and Outlook.com"
+        },
+        {
+          url:"https://nullreferer.com/?https://ep.ups.com/UPSRegistration/UPSLogin",
+          name:"UPS Employee Portal",
+          desc:"Portal to access pay, time off/leave, and view your timecard."
         },
       ]
     },
 
 {
-      name:"InfoSecurity",
-      icon:"id-badge",
+      name:"Websites",
+      icon:"globe",
       list:[
         {
-          url:"https://51sec.loggly.com/",
-          name:"Loggly",
-          desc:"Loggly"
+          url:"https://nullreferer.com/?https://login.mailchimp.com/",
+          name:"MailChimp",
+          desc:"Newsletter Creator"
         },
         {
-          url:"https://proxy.itprosec.eu.org/",
-          name:"Proxy",
-          desc:"Proxy"
+          url:"https://nullreferer.com/?https://discohook.org",
+          name:"Discohook",
+          desc:"Embed into Discord"
         },
         {
-          url:"https://gd.51sec.org",
-          name:"Google Drive",
-          desc:"Google Drive"
+          url:"https://nullreferer.com/?https://www.plex.tv",
+          name:"Plex Login",
+          desc:"Plex Default Website"
         },
         {
-          url:"https://od.51sec.org",
-          name:"One Drive",
-          desc:"One Drive"
+          url:"https://nullreferer.com/?https://youtube.com",
+          name:"Youtube",
+          desc:"Entertainment"
+        },
+        {
+          url:"https://nullreferer.com/?https://cloudinary.com/",
+          name:"Cloudinary",
+          desc:"Professional Digital Media Storage"
+        },
+        {
+          url:"https://nullreferer.com/?https://ClanAOD.net/",
+          name:"ClanAOD",
+          desc:"The Angels of Death is a community of players founded in 1999 based on a core set of conduct that aims to promote decency and provide a comfortable environment to play with thousands of other likeminded members. With nearly 3000 members globally there is always someone to play alongside when you want."
+        },
+        {
+          url:"https://nullreferer.com/?https://www.greenmangaming.com/",
+          name:"Green man Gaming",
+          desc:"Based in sunny London, UK, Green Man Gaming is a company with a mission - to make sure gaming gets to everyone. To do that we sell PC and Xbox games at amazing prices. There's over 10,000 games on store and they are added to daily, all sourced from publishers."
+        },
+        {
+          url:"https://nullreferer.com/?https://status.plex.tv/",
+          name:"Plex Status Page",
+          desc:"Uptime For the Official Plex Website / Services"
+        },
+        {
+          url:"https://nullreferer.com/?https://us.goodcloud.xyz/#/login",
+          name:"GoodCloud",
+          desc:"Remote Monitoring to Gl.iNet routers."
+        },
+        {
+          url:"https://nullreferer.com/?https://boards.4chan.org",
+          name:"4chan",
+          desc:"4chan is a simple image-based bulletin board where anyone can post comments and share images. There are boards dedicated to a variety of topics, from Japanese animation and culture to videogames, music, and photography."
+        },
+        {
+          url:"https://nullreferer.com/?https://securedserveraccess.com/forum/",
+          name:"HomeFlix-Media Forums Page",
+          desc:"A Forum Page For Registered Plex Server Members"
+        },
+        {
+          url:"https://nullreferer.com/?https://playback.fm/birthday-song",
+          name:"Find Out The #1 Song The Day You Were Born",
+          desc:"What was the #1 song on the day you were born?"
+        },
+        {
+          url:"https://nullreferer.com/?https://www.amazon.com/Rosewill-Chassis-Rackmount-Computer-RSV-R4100U/dp/B09BDH3SYQ/ref=sr_1_1?crid=31049BD6W0RGA&keywords=rosewill+rsv-r41100u&qid=1662638914&s=electronics&sprefix=rosewill+rsv-r41100u%2Celectronics%2C65&sr=1-1",
+          name:"Rosewill 4U Server Chassis 9 Bay Server Case",
+          desc:"Plex Server Storage / Server Recommendations "
+        },
+        {
+          url:"https://nullreferer.com/?https://ivipid.com/",
+          name:"Ivipid Video Maker",
+          desc:"Ivipid lets you create custom, high-quality video intros and greeting cards with just a few clicks !"
+        },
+        
+      ]
+    },
+  
+{
+      name:"Misc. Links",
+      icon:"globe",
+      list:[
+        {
+          url:"https://nullreferer.com/?https://www.netflix.com/browse",
+          name:"Netflix",
+          desc:"Media Streaming"
+        },
+        {
+          url:"https://nullreferer.com/?https://manganato.com/",
+          name:"Manga Ebooks online",
+          desc:"Read English Manga free Online."
+        },
+        {
+          url:"https://nullreferer.com/?https://ipleak.net/",
+          name:"IPLEAK.NET",
+          desc:"What is your IP, What is your DNS, What informations you send to websites."
+        },
+        {
+          url:"https://nullreferer.com/?https://tinyurl.com/",
+          name:"TinyURL",
+          desc:"shorten that long URL into a tiny URL."
+        },
+        {
+          url:"https://nullreferer.com/?https://panel.dreamhost.com/",
+          name:"DreamHost",
+          desc:"Web Hosting"
+        },
+        {
+          url:"https://nullreferer.com/?https://nullreferer.com/?",
+          name:"Nullreferer",
+          desc:"Remove HTTP Referrer from URLs."
+        },
+        {
+          url:"https://nullreferer.com/?https://www.cdkoffers.com/?sscid=71k6_6bvue&",
+          name:"CDkoffers",
+          desc:"CDkoffers range from steam keys, PlayStation Network cards, and PC games/expansion packs and software keys."
+        },
+        {
+          url:"https://nullreferer.com/?https://www.freenom.com/en/index.html?lang=en",
+          name:"Freenom",
+          desc:"Freenom World is a fast and anonymous Public DNS resolver."
+        },
+        {
+          url:"https://nullreferer.com/?https://www.buyemp.com/",
+          name:"Emergency Medical Products",
+          desc:"Since 1972, Emergency Medical Products (EMP) has been your convenient, low-price source for medical and safety supplies. We’re here to help you prepare for a variety of medical scenarios, no matter your occupation or expertise."
+        },
+        {
+          url:"https://nullreferer.com/?https://www.virustotal.com/gui/home/upload",
+          name:"VirusTotal",
+          desc:"Analyze suspicious files, domains, IPs and URLs to detect malware and other breaches, automatically share them with the security community"
         },
       ]
     },
 
 {
-      name:"51Sec App",
-      icon:"id-badge",
+      name:"Auto Links",
+      icon:"globe",
       list:[
         {
-          url:"https://51sec.org/mail",
-          name:"51Sec Webmail",
-          desc:"51Sec Webmail"
+          url:"https://www.rockauto.com/",
+          name:"RockAuto",
+          desc:"RockAuto is an online, family business founded in 1999 by automotive engineers with two goals: Liberate information hidden behind the auto parts store counter (by listing all available items and product specifications on RockAuto.com, not just what one store stocks or one counter-person knows) Make auto parts affordable (by remaining a strictly online company, we have no store locations, no counter-people and don't have a lot of money tied up in slow-moving inventory. We pass on those savings with lower prices so cars of all ages can be reliable and fun to drive.) Today, we ship thousands of parts, from hundreds of manufacturers, to millions of customers all over the world. And the RockAuto catalog keeps expanding. Someday, it may be possible to build an entire car using parts from RockAuto!"
         },
         {
-          url:"https://sec.myxwiki.org/",
-          name:"51Sec Wiki",
-          desc:"51Sec Wiki"
-        },
-        {
-          url:"https://calendly.com/51sec/",
-          name:"51Sec Calendar",
-          desc:"Book a 15 mins meeting with Netsec"
-        },
-        {
-          url:"https://myod.51sec.eu.org",
-          name:"51Sec EU OneDrive",
-          desc:"51Sec EU OneDrive"
-        },
-        {
-          url:"https://ip.51sec.org/api",
-          name:"Your Public IP",
-          desc:"Show Your Public IP Address"
-        },
-        {
-          url:"https://nav.51sec.org",
-          name:"51Sec Navigation",
-          desc:"Bookmarks for all kinds of things, Software, Website, tools, Tutorials"
-        },
-                {
-          url:"https://go.51sec.org",
-          name:"URL Shortener",
-          desc:"Shorten your long URL"
-        },
-      ]
-    },
-
-    {
-      name:"Technologies",
-      icon:"code",
-      list:[
-        {
-          url:"https://oschina.net/",
-          name:"开源中国",
-          desc:"程序员集散地"
-        },
-        {
-          url:"https://v2ex.com",
-          name:"V2EX",
-          desc:"程序员集散地"
-        },
-        {
-          url:"https://csdn.net/",
-          name:"CSDN技术社区",
-          desc:"程序员集散地"
-        },
-        {
-          url:"https://github.com/",
-          name:"Github",
-          desc:"程序员集散地"
-        },
-      ]
-    },
-    {
-      name:"Learning",
-      icon:"graduation cap",
-      list:[
-        {
-          url:"https://w3school.com.cn/",
-          name:"W3school在线教程",
-          desc:"程序员集散地"
-        },
-        {
-          url:"https://runoob.com/",
-          name:"菜鸟教程",
-          desc:"程序员集散地"
-        },
-        {
-          url:"https://segmentfault.com/",
-          name:"思否社区",
-          desc:"程序员集散地"
-        },
-        {
-          url:"https://jianshu.com/",
-          name:"简书",
-          desc:"程序员集散地"
+          url:"https://parts.ford.com/en.html",
+          name:"Ford Parts Online Store",
+          desc:"Find the Right Part for Your ford."
         },
       ]
     }
@@ -223,7 +347,7 @@ function getFavicon(url){
  */
 
 function renderIndex(){
-  const footer = el('footer',[],el('div',['class="footer"'],'Powered by' + el('a',['class="ui label"','href="https://github.com/51sec/cf-worker-dir"','target="_blank"'],el('i',['class="github icon"'],"") + 'Cf-Worker-Dir') + ' &copy; Base on ' + el('a',['class="ui label"'],el('i',['class="balance scale icon"'],"") + 'MIT License')));
+  const footer = el('footer',[],el('div',['class="footer"'],'Powered by' + el('a',['class="ui label"','href="https://www.cloudflare.com/"','target="_blank"'],el('i',['class="fa fa-heart"'],"") + 'Cloudflare') + ' &copy; 2022-2024 ' + el('a',['class="ui label"'],el('i',['class="fa fa-heart"'],"") + 'HomeFlix-Media')));
   return renderHeader() + renderMain() + footer;
 }
 
